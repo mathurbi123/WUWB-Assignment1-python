@@ -1,9 +1,5 @@
-x = int(input('Enter a no. '))
-x_str = str(x)
-s = 0
-for i in x_str:
-    s += int(i)**3
-if s==x:
-    print("Armstrong no.", s)
-else:
-    print('Not an amstrong no. ', s)
+x = input('Enter a no. ')
+c = len(x)
+for i in x:
+    b = sum(int(digits)**c for digits in str(x))
+print(b)
